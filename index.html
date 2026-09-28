@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f8">
+  <meta name="description" content="Meet AirLoop, a smart home air-management concept. A discreet sensor and a quiet ventilation module sense the room, learn its rhythm, and take useful action.">
+  <meta property="og:title" content="AirLoop — The room that learns to breathe">
+  <meta property="og:description" content="A quieter kind of intelligence. Explore our future home air-management concept.">
+  <meta property="og:type" content="website">
+  <title>AirLoop — The room that learns to breathe</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%231a373e'/%3E%3Ccircle cx='20' cy='20' r='11' fill='none' stroke='%23ffffff' stroke-width='3'/%3E%3Cpath d='M20 9a11 11 0 0 1 11 11' fill='none' stroke='%239ed4ca' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="AirLoop home"><span class="brand-mark" aria-hidden="true"></span>AirLoop</a>
+      <nav aria-label="Main navigation"><a href="#everyday">Everyday life</a><a href="#intelligence">How it works</a><a href="#specifications">Tech specs</a></nav>
+      <span class="concept-label">A future home concept</span>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-art"><img src="assets/bedroom-sensor.png" alt="AirLoop's discreet circular sensor on the wall of a calm, sunlit bedroom" fetchpriority="high" width="1536" height="1024"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="small-ring" aria-hidden="true"></span>Meet AirLoop</p>
+        <h1 id="hero-title">The room<br>that learns<br>to <em>breathe.</em></h1>
+        <p class="hero-description">A discreet sensor. A quiet response.<br>Air that adapts to the way you live.</p>
+        <a class="button" href="#everyday">Discover AirLoop <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-bottom"><span>INTELLIGENCE, IN THE BACKGROUND.</span><a href="#everyday" aria-label="Scroll to everyday life">Scroll to explore <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <div class="principles" aria-label="AirLoop at a glance"><span><b>01</b> Senses the invisible</span><span><b>02</b> Learns your rhythm</span><span><b>03</b> Acts quietly</span><span class="privacy-principle">No camera. No microphone.</span></div>
+
+    <section class="everyday section-wrap" id="everyday" aria-labelledby="everyday-title">
+      <div class="section-intro"><p class="eyebrow">Made for the moments that matter</p><div class="intro-grid"><h2 id="everyday-title">Life goes on.<br>AirLoop takes care.</h2><p>Carbon dioxide, particles, and humidity can change before a room feels uncomfortable. AirLoop notices the shift and helps your home respond.</p></div></div>
+      <div class="story-grid">
+        <article class="story-card">
+          <div class="story-image"><img src="assets/bedroom-sensor.png" alt="A discreet matte white AirLoop sensor on the wall of a sunlit minimalist bedroom" loading="lazy" width="1536" height="1024"><span class="image-label">01 / The study session</span></div>
+          <div class="story-copy"><p class="eyebrow">Stay with the thought</p><h3>More room for<br>your next idea.</h3><p>Your notes are open, the evening is quiet, and tomorrow’s exam is getting closer. As carbon dioxide builds, AirLoop gently increases ventilation in the background. You stay with the next idea, without another screen asking for your attention.</p><div class="story-action"><span class="status-dot" aria-hidden="true"></span>CO₂ rising <span aria-hidden="true">→</span> Ventilation adjusts</div></div>
+        </article>
+        <article class="story-card">
+          <div class="story-image"><img src="assets/ventilation-module.png" alt="AirLoop's slim matte white ventilation module with fine underside vent slats" loading="lazy" width="1536" height="1024"><span class="image-label">02 / After the shower</span></div>
+          <div class="story-copy"><p class="eyebrow">Leave the steam behind</p><h3>Your shower ends.<br>The care continues.</h3><p>The water stops, but a soft mist still hangs in the bathroom. AirLoop keeps ventilation running while moisture remains, or calls on a compatible dehumidifier when needed. As humidity settles, it eases back, quietly finishing what your morning started.</p><div class="story-action"><span class="status-dot" aria-hidden="true"></span>Humidity rising <span aria-hidden="true">→</span> Moisture managed</div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="intelligence" id="intelligence" aria-labelledby="intelligence-title">
+      <div class="section-wrap">
+        <div class="section-intro"><p class="eyebrow">A little awareness. A useful response.</p><h2 id="intelligence-title">Quietly intelligent.<br>By design.</h2></div>
+        <div class="loop-layout">
+          <div class="loop-copy">
+            <div class="loop-tabs" role="tablist" aria-label="How AirLoop works"><button type="button" id="tab-sense" role="tab" aria-controls="panel-sense" aria-selected="true" data-step="sense">01 <span>Sense</span></button><button type="button" id="tab-learn" role="tab" aria-controls="panel-learn" aria-selected="false" tabindex="-1" data-step="learn">02 <span>Learn</span></button><button type="button" id="tab-act" role="tab" aria-controls="panel-act" aria-selected="false" tabindex="-1" data-step="act">03 <span>Act</span></button></div>
+            <div class="feature-panel" id="panel-sense" role="tabpanel" aria-labelledby="tab-sense" tabindex="0"><h3>A feel for the invisible.</h3><p>AirLoop quietly measures carbon dioxide, fine particles, temperature, and humidity. Its wall sensor tracks subtle changes throughout the day, giving the system a clearer picture of your room’s conditions without a camera, a microphone, or another demand on your attention.</p><span class="feature-note">Four signals. A clearer picture.</span></div>
+            <div class="feature-panel" id="panel-learn" role="tabpanel" aria-labelledby="tab-learn" tabindex="0" hidden><h3>At home with your rhythm.</h3><p>Over time, AirLoop’s AI learns recurring patterns in your home’s air, from evening study sessions to morning showers. Routine decisions stay on the device whenever possible, helping the system anticipate familiar changes while you choose what it remembers and shares.</p><span class="feature-note">Routine learning. Local decisions whenever possible.</span></div>
+            <div class="feature-panel" id="panel-act" role="tabpanel" aria-labelledby="tab-act" tabindex="0" hidden><h3>Awareness becomes action.</h3><p>When conditions change, AirLoop adjusts ventilation or coordinates compatible purifiers and dehumidifiers within your chosen settings. It considers outdoor conditions before bringing air inside, then eases back as the room settles. A soft light offers reassurance without interrupting your day.</p><span class="feature-note">Ventilate. Dehumidify. Purify. Then ease back.</span></div>
+          </div>
+          <div class="signal-display" aria-label="Illustrative example of AirLoop sensing and responding">
+            <div class="display-top"><span>YOUR ROOM, AT A GLANCE</span><span class="demo-label">Illustrative</span></div>
+            <div class="display-heading"><span class="status-dot" aria-hidden="true"></span><span id="display-title">Sensing the room</span></div>
+            <div class="readings"><div><span class="reading-name">Carbon dioxide</span><strong><span id="co2-reading">820</span> <small>ppm</small></strong><div class="reading-track"><span style="width:44%"></span></div></div><div><span class="reading-name">Fine particles</span><strong>8 <small>µg/m³</small></strong><div class="reading-track"><span style="width:22%"></span></div></div><div><span class="reading-name">Temperature</span><strong>22 <small>°C</small></strong></div><div><span class="reading-name">Humidity</span><strong><span id="humidity-reading">48</span> <small>% RH</small></strong></div></div>
+            <div class="display-message" aria-live="polite"><span class="message-symbol" aria-hidden="true">↳</span><p id="display-message">Four readings help AirLoop decide what the room needs.</p></div>
+            <p class="demo-footnote">Example readings, not live sensor data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="privacy section-wrap" aria-labelledby="privacy-title"><div class="privacy-symbol" aria-hidden="true">◎</div><p class="eyebrow">Private by design</p><h2 id="privacy-title">Understands your air.<br>Respects your space.</h2><p>No camera. No microphone. Routine decisions are processed locally whenever possible. You choose what to store, what to share, and which devices AirLoop can control.</p><div class="privacy-points"><span>Local-first processing</span><span>Sharing by permission</span><span>Your settings, always</span></div></section>
+
+    <section class="specifications" id="specifications" aria-labelledby="specs-title"><div class="section-wrap specs-layout"><div class="specs-intro"><p class="eyebrow">The details, considered</p><h2 id="specs-title">Small footprint.<br>Thoughtful <br>engineering.</h2><p>One wall sensor. One quiet ventilation module. Designed to work with compatible air-care devices.</p><span class="spec-tag">Concept specifications</span></div><div class="spec-table-wrap"><table><caption>AirLoop / Proposed technical specifications</caption><tbody>
+      <tr><th scope="row">Sensor accuracy</th><td><div>CO₂ <span>±(50 ppm + 3% of reading)</span></div><div>PM2.5 <span>±10 µg/m³ or ±10% of reading, whichever is greater</span></div><div>Temperature <span>±0.3 °C</span></div><div>Relative humidity <span>±3% RH</span></div></td></tr>
+      <tr><th scope="row">Coverage area</th><td>Up to 40 m² per room<span class="spec-detail">Assumed ceiling height: 2.5 m. Actual performance would depend on layout, airflow, and installation.</span></td></tr>
+      <tr><th scope="row">Noise level</th><td>22 dBA in Quiet mode · 38 dBA in Boost mode<span class="spec-detail">Proposed sound-pressure targets at 1 m.</span></td></tr>
+      <tr><th scope="row">Privacy standard</th><td>Local-first processing. No camera or microphone.<span class="spec-detail">Optional encrypted sharing via TLS 1.3, with user permission. Proposed architecture; no third-party certification claimed.</span></td></tr>
+    </tbody></table><p class="spec-disclaimer">Concept specifications. Illustrative design targets, not laboratory-tested performance or certifications. Purification and active dehumidification require compatible connected devices.</p></div></div></section>
+
+    <section class="closing section-wrap"><p class="eyebrow">AirLoop</p><h2>Good air.<br><em>Quietly managed.</em></h2><p>The room that learns to breathe.</p><a class="text-link" href="#top">Back to the beginning <span aria-hidden="true">↑</span></a></section>
+
+    <section class="creative-notes section-wrap" aria-label="Campaign copy and image prompts"><details><summary><span>Behind the concept</span><span class="summary-description">Campaign directions & image prompts</span><span class="plus" aria-hidden="true">+</span></summary><div class="notes-content"><div class="notes-intro"><p class="eyebrow">The creative notebook</p><h2>Three ways to<br>introduce AirLoop.</h2><p>Alternative headlines and art direction for the AirLoop concept presentation.</p></div><div class="campaign-options"><article><span class="eyebrow">01 / Human & intuitive</span><h3>The room that learns to breathe.</h3><p>A discreet sensor. A quiet response. Air that adapts to the way you live.</p></article><article><span class="eyebrow">02 / Calm & reassuring</span><h3>Better air. Less on your mind.</h3><p>AirLoop notices what you cannot see and quietly turns changing conditions into useful action.</p></article><article><span class="eyebrow">03 / Precise & intelligent</span><h3>Invisible changes. Considered responses.</h3><p>One connected system senses your air, learns your rhythm, and helps your home respond.</p></article></div><div class="prompt-section"><h3>A vision you can render.</h3><p>Ready-to-use image prompts for exploring the AirLoop hardware.</p><article class="prompt-block"><div class="prompt-title"><h4>01 / The bedroom sensor</h4><button type="button" class="copy-button" data-copy="prompt-sensor">Copy prompt</button></div><p id="prompt-sensor">High-end photorealistic product rendering of AirLoop, a small circular smart air-quality sensor mounted at eye level on the pale blue-grey plaster wall of a minimalist bedroom. Matte white ceramic-like housing, a completely blank face with no black center, no screen, no camera lens and no microphone; a single subtle soft-green light on the outer rim. An ivory linen bed and light oak bedside table sit quietly in the background. Natural morning light, soft realistic shadows, restrained Apple-inspired industrial design, premium materials, peaceful lived-in atmosphere. Wide editorial composition, sensor on the right, generous negative space, 3:2 aspect ratio, crisp product detail. No text, logos, watermark, floating interface, or exaggerated glow.</p></article><article class="prompt-block"><div class="prompt-title"><h4>02 / The quiet ventilation module</h4><button type="button" class="copy-button" data-copy="prompt-vent">Copy prompt</button></div><p id="prompt-vent">High-end photorealistic product rendering of AirLoop’s quiet smart ventilation module, mounted on a cool pale-grey interior wall. A slim horizontal pill-shaped housing in matte white with precision-finished aluminum details and fine ventilation slats along the underside. Three-quarter close-up with physically plausible construction, discreet seams, a compact silhouette, and premium material textures. Natural side light from a nearby window, soft shadows, restrained Apple-inspired minimalism, clean architectural setting. Wide 3:2 composition with generous negative space and crisp product focus. Communicate quiet performance through stillness and elegant proportions. No text, logos, watermark, camera, microphone, floating interface, colored airflow ribbons, or exaggerated glow.</p></article><p class="copy-status" role="status" aria-live="polite"></p></div></div></details></section>
+  </main>
+  <footer class="site-footer section-wrap"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>AirLoop</a><p>A graduate Science & Technology English project.<br>Fictional product concept. Product images are illustrative.</p><span>Designed for a little more ease.</span></footer>
+</body>
+</html>
+
